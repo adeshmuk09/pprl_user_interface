@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PPRL data pre-processor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar fixed-top navbar-light bg-white shadow">
+    <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="logo"  height="60px">
+        </a>
+    </div>
+</nav>
+<div class="container px-4  __main_container">
+    <div class="__uploader">
+        <h3>
+            Data pre-processing
+        </h3>
+        <p>
+            Select an excel file to start the preprocessing steps which includes string normalization and special character filtering
+        </p>
+        <form>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Select CSV File</label>
+                <input class="form-control"
+                       type="file"
+                       accept="text/csv"
+                       id="formFile">
+            </div>
+        </form>
+        <button class="btn btn-primary" onclick="processFile()" id="upload_button">
+            Preprocess the file
+        </button>
+    </div>
+    <textarea class="mt-3 " id="results" cols="100" rows="20"></textarea>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
